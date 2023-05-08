@@ -66,12 +66,8 @@ INSERT INTO [dbo].[Product]([ProductName],[ProductContent],[Description],[Price]
 VALUES(N'Chân váy',N'Chân váy bò xanh',N'Kiểu váy hot của các bạn nữ bên trong năm vừa qua.',250000,N'/chan_vay.jpg',22,13,1)
 GO
 INSERT INTO Customer(UserName ,Password,FullName,Email ,Gender ,Address ,Phone) VALUES ('thu','1234',N'Nguyệt Thu',N'kendy@gmail.com','Female',N'tqh','0945186341')
- GO
- INSERT INTO Admin(AdminName ,Password,Address ,Email  ,Phone) VALUES ('Admin','admin1234',N'tqh',N'kendy@gmail.com','0945186341')
- GO
-  INSERT INTO Admin(AdminName ,Password,Address ,Email  ,Phone) VALUES ('Thu','nguyetthu1234',N'tqh',N'kendy@gmail.com','0945186341')
- GO
- select * from BillDetail
-  select * from Bills
-  SELECT * FROM BillDetail WHERE Bill_Id = 1 OrderByDescending(b => b.ProductID).Where(c => c.ClientID == clientid));
-SELECT * FROM Admin WHERE AdminName = 'Admin'
+GO
+INSERT INTO Admin(AdminName ,Password,Address ,Email  ,Phone) VALUES ('Admin','admin1234',N'tqh',N'kendy@gmail.com','0945186341')
+GO
+INSERT INTO Admin(AdminName ,Password,Address ,Email  ,Phone) VALUES ('Thu','nguyetthu1234',N'tqh',N'kendy@gmail.com','0945186341')
+GO
