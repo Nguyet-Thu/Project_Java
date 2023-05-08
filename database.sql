@@ -27,7 +27,6 @@ CREATE TABLE Product(
 	Category_Id int FOREIGN KEY REFERENCES Category(id),
 	Status bit NULL,
 )
-drop table Bills
 CREATE TABLE Customer(
 	Id int PRIMARY KEY IDENTITY(1,1),
 	UserName varchar(50),
@@ -49,7 +48,6 @@ CREATE TABLE Bills(
 	Note ntext,
 	Status bit NULL
 )
-select 
 CREATE TABLE BillDetail(
 	Id int PRIMARY KEY IDENTITY(1,1),
 	ProductId int FOREIGN KEY REFERENCES Product(Id),
